@@ -1,0 +1,46 @@
+{
+  "artifact": "metaculus_bot_testing_area_read_only_dry_run_packet",
+  "created_at_utc": "2026-07-19T21:06:32.902343+00:00",
+  "dry_run_packet": {
+    "artifact": "metaculus_submission_transport_receipt",
+    "comment_endpoint": "/comments/create/",
+    "forecast_endpoint": "/questions/forecast/",
+    "payload": {
+      "comment": {
+        "included_forecast": true,
+        "is_private": true,
+        "on_post": 43323,
+        "parent": null,
+        "text": "Dry-run payload construction only. No Metaculus submission endpoint was called."
+      },
+      "forecast": [
+        {
+          "continuous_cdf": null,
+          "probability_yes": 0.5,
+          "probability_yes_per_category": null,
+          "question": 43325,
+          "source": "api"
+        }
+      ]
+    },
+    "payload_sha256": "255b58e76137733b77781f746a3cbfad96dc4abe975c9174b67b65e18b5482a1",
+    "status": "dry_run_not_submitted",
+    "submission_endpoints_called": false
+  },
+  "questions_sha256": "53a304b1701cba18e89f429f4fdaa3ecb6b3c94b4f9c907dbfb612883cc3d771",
+  "read_only_question_count": 4,
+  "sample_question": {
+    "description": "US President Donald Trump's net approval rating has long hovered between -10 and -20, with him holding an unprecedentedly [stable approval rating](https://en.wikipedia.org/wiki/Opinion_polling_on_the_first_Trump_presidency) during his first term.&#x20;\r\n\r\nDuring Trump's second term, his approval has moved more substantially, starting with a positive approval rating, before dropping into a negative rating, reaching the high teens as of December 2025.",
+    "post_id": 43323,
+    "question_id": 43325,
+    "resolution_criteria": "This question will resolve as Donald Trump's net approval rating on December 31, 2026, according to data from the [Silver Bulletin](https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin).",
+    "scheduled_close_time": "2026-12-31T00:00:00Z",
+    "status": "open",
+    "title": "What will be Donald Trump's net approval on December 31, 2026?",
+    "type": "numeric",
+    "url": null
+  },
+  "submission_endpoints_called": false,
+  "token_written_to_artifact": false,
+  "tournament_id": "bot-testing-area"
+}

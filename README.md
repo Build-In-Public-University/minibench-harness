@@ -293,7 +293,50 @@ Conclusion:
 ```text
 fresh token works for read-only API
 cycle-slug API filter did not close the MiniBench discovery gap
-bot-template internals remain the fallback for project resolution and payload shape
+bot-template internals resolved the transport seam and payload shapes
 no forecast submission endpoint was called
+```
+
+## Metaculus transport adapter — dry-run only by default
+
+Source facts from `Metaculus/metac-bot-template` no-framework reference:
+
+```text
+GET  /api/posts/?tournaments=<id>&statuses=open&limit=<n>
+POST /api/questions/forecast/
+POST /api/comments/create/
+BOT_TESTING_AREA_ID = bot-testing-area
+CURRENT_MINIBENCH_ID = minibench
+```
+
+Implemented adapter:
+
+```text
+src/minibench_harness/metaculus_transport.py
+```
+
+Verified dry-run artifact:
+
+```text
+artifacts/metaculus-discovery/bot_testing_area_dry_run_packet.json
+```
+
+Current status:
+
+```text
+bot-testing-area authenticated read-only list: works
+read_only_question_count: 4
+forecast payload shape: constructed
+comment payload shape: constructed
+submission_endpoints_called: false
+submit path guard: requires explicit allow_submit=True
+```
+
+Important:
+
+```text
+The adapter is dry-run/no-submit by default.
+No real MiniBench forecast has been submitted.
+The urllib transport needs an explicit User-Agent; default urllib was rejected with HTTP 403.
 ```
 
