@@ -372,6 +372,31 @@ comment endpoint status: 201
 readback status: 200
 ```
 
+Continuous-CDF POST smoke receipt:
+
+```text
+artifacts/metaculus-discovery/bot_testing_area_continuous_cdf_post_smoke_receipt.json
+```
+
+Continuous-CDF POST smoke result:
+
+```text
+target: bot-testing-area
+question_types: numeric, date, discrete
+numeric:  post_id 43323 / question_id 43325 / forecast 201 / comment 201 / readback 200
+date:     post_id 43324 / question_id 43326 / forecast 201 / comment 201 / readback 200
+discrete: post_id 43321 / question_id 43322 / forecast 201 / comment 201 / readback 200
+```
+
+CDF boundary rule discovered during smoke:
+
+```text
+closed lower bound -> cdf[0] must be 0.0
+open lower bound   -> cdf[0] must be > 0.0
+closed upper bound -> cdf[-1] must be 1.0
+open upper bound   -> cdf[-1] must be < 1.0
+```
+
 Important:
 
 ```text

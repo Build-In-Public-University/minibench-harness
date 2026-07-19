@@ -29,11 +29,13 @@ def build_posts_query_params(tournament_id: int | str, *, offset: int = 0, count
         'limit': count,
         'offset': offset,
         'order_by': '-hotness',
-        'forecast_type': 'binary,multiple_choice,numeric,discrete',
+        'forecast_type': 'binary,multiple_choice,numeric,discrete,date',
         'tournaments': [tournament_id],
         'statuses': 'open',
         'include_description': 'true',
     }
+
+
 def _validate_probability(value: float) -> float:
     probability = float(value)
     if not 0 < probability < 1:
@@ -56,12 +58,44 @@ def _validate_multiple_choice(probability: Any, options: list[str] | None) -> di
     return normalized
 
 
+def _validate_continuous_cdf(
+    probability: Any,
+    continuous_range: list[Any] | None,
+    *,
+    open_lower_bound: bool | None = None,
+    open_upper_bound: bool | None = None,
+) -> list[float]:
+    if not isinstance(probability, list):
+        raise ValueError('continuous_cdf probability must be a list')
+    if not continuous_range:
+        raise ValueError('continuous_range is required for continuous_cdf payloads')
+    if len(probability) != len(continuous_range):
+        raise ValueError('continuous_cdf length must match continuous_range length')
+    cdf = [float(value) for value in probability]
+    if any(value < 0 or value > 1 for value in cdf):
+        raise ValueError('continuous_cdf values must be between 0 and 1')
+    if any(left > right for left, right in zip(cdf, cdf[1:])):
+        raise ValueError('continuous_cdf values must be monotone nondecreasing')
+    if open_lower_bound is False and cdf[0] != 0.0:
+        raise ValueError('continuous_cdf[0] must be 0.0 for closed lower bound')
+    if open_lower_bound is not False and cdf[0] <= 0.0:
+        raise ValueError('continuous_cdf[0] must be greater than 0.0 unless lower bound is known closed')
+    if open_upper_bound is False and cdf[-1] != 1.0:
+        raise ValueError('continuous_cdf[-1] must be 1.0 for closed upper bound')
+    if open_upper_bound is not False and cdf[-1] >= 1.0:
+        raise ValueError('continuous_cdf[-1] must be less than 1.0 unless upper bound is known closed')
+    return cdf
+
+
 def build_forecast_payload(
     question_id: int,
-    probability: float | dict[str, float],
+    probability: float | dict[str, float] | list[float],
     question_type: str = 'binary',
     *,
     options: list[str] | None = None,
+    continuous_range: list[Any] | None = None,
+    open_lower_bound: bool | None = None,
+    open_upper_bound: bool | None = None,
 ) -> list[dict[str, Any]]:
     if question_type == 'binary':
         probability_yes = _validate_probability(float(probability))
@@ -84,6 +118,21 @@ def build_forecast_payload(
                 'continuous_cdf': None,
             }
         ]
+    if question_type in {'numeric', 'date', 'discrete'}:
+        return [
+            {
+                'question': int(question_id),
+                'source': 'api',
+                'probability_yes': None,
+                'probability_yes_per_category': None,
+                'continuous_cdf': _validate_continuous_cdf(
+                    probability,
+                    continuous_range,
+                    open_lower_bound=open_lower_bound,
+                    open_upper_bound=open_upper_bound,
+                ),
+            }
+        ]
     raise NotImplementedError(f'{question_type} payloads are not supported in the harness adapter so far')
 
 
@@ -101,6 +150,7 @@ def normalize_post_question(post: dict[str, Any]) -> dict[str, Any] | None:
     question = post.get('question')
     if not isinstance(question, dict):
         return None
+    scaling = question.get('scaling') if isinstance(question.get('scaling'), dict) else None
     return {
         'post_id': post.get('id'),
         'question_id': question.get('id'),
@@ -112,6 +162,11 @@ def normalize_post_question(post: dict[str, Any]) -> dict[str, Any] | None:
         'resolution_criteria': question.get('resolution_criteria'),
         'description': question.get('description') or question.get('background_info'),
         'options': question.get('options'),
+        'unit': question.get('unit'),
+        'scaling': scaling,
+        'continuous_range': scaling.get('continuous_range') if scaling else None,
+        'open_lower_bound': question.get('open_lower_bound'),
+        'open_upper_bound': question.get('open_upper_bound'),
     }
 
 
@@ -160,14 +215,25 @@ class MetaculusTransport:
         *,
         post_id: int,
         question_id: int,
-        probability: float | dict[str, float],
+        probability: float | dict[str, float] | list[float],
         rationale: str,
         dry_run: bool = True,
         question_type: str = 'binary',
         options: list[str] | None = None,
+        continuous_range: list[Any] | None = None,
+        open_lower_bound: bool | None = None,
+        open_upper_bound: bool | None = None,
     ) -> dict[str, Any]:
         payload = {
-            'forecast': build_forecast_payload(question_id, probability, question_type, options=options),
+            'forecast': build_forecast_payload(
+                question_id,
+                probability,
+                question_type,
+                options=options,
+                continuous_range=continuous_range,
+                open_lower_bound=open_lower_bound,
+                open_upper_bound=open_upper_bound,
+            ),
             'comment': build_comment_payload(post_id, rationale),
         }
         receipt = {
