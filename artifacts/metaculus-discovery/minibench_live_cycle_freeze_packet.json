@@ -1,0 +1,321 @@
+{
+  "all_query": {
+    "body_sha256": "b2045bc6ec39edf31172fe6e96c43cc3b4c9992c9e385e166e61159e079cb778",
+    "params": {
+      "limit": 100,
+      "tournaments": "minibench"
+    },
+    "result_count": 60,
+    "status": 200
+  },
+  "artifact": "minibench_live_cycle_freeze_packet",
+  "comment_endpoints_called": false,
+  "created_at_utc": "2026-07-19T21:27:00.584380+00:00",
+  "forecasting_policy_freeze": {
+    "mini_bench_submission_approved": false,
+    "optional_stopping_forbidden": true,
+    "prediction_artifacts_before_submission": true,
+    "primary_evaluation": "fixed_question_list_at_freeze_only; no empty-cycle performance claim"
+  },
+  "freeze_decision": {
+    "live_cycle_frozen_for_submission": false,
+    "next_safe_action": "Wait for next MiniBench open window or discover a different official current MiniBench target, then freeze again before any live POST.",
+    "reason": "No open MiniBench questions were returned for tournaments=minibench&statuses=open at freeze time.",
+    "requires_new_user_approval_before_live_submission": true
+  },
+  "minibench_project_summary": {
+    "bot_leaderboard_status": "include",
+    "close_date": "2026-07-31T00:00:00Z",
+    "default_permission": "forecaster",
+    "forecasting_end_date": "2026-07-16T22:21:47Z",
+    "id": 33067,
+    "is_ongoing": true,
+    "name": "MiniBench",
+    "prize_pool": "1000.00",
+    "score_type": "spot_peer_tournament",
+    "slug": "minibench",
+    "start_date": "2026-07-13T00:00:00Z",
+    "type": "question_series",
+    "user_permission": null,
+    "visibility": "unlisted"
+  },
+  "open_query": {
+    "body_sha256": "2a004bfc5ea91c702535f6c7508a0ba70a798eaed1b76279f513f3eac6a52aa3",
+    "params": {
+      "limit": 100,
+      "statuses": "open",
+      "tournaments": "minibench"
+    },
+    "result_count": 0,
+    "status": 200
+  },
+  "recent_question_samples": [
+    {
+      "category_slugs": [
+        "nuclear"
+      ],
+      "post_id": 44617,
+      "question_id": 44771,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-16T22:21:47Z",
+      "slug": "will-the-zaporizhzhia-nuclear-plant-lose-all-off-site-pow",
+      "status": "closed",
+      "title": "Will the Zaporizhzhia nuclear plant lose all off-site power again between July 23 and July 25, 2026?"
+    },
+    {
+      "category_slugs": [
+        "nuclear"
+      ],
+      "post_id": 44616,
+      "question_id": 44770,
+      "question_status": "closed",
+      "question_type": "discrete",
+      "scheduled_close_time": "2026-07-15T01:52:54Z",
+      "slug": "how-many-total-complete-losses-of-off-site-power-will-the",
+      "status": "closed",
+      "title": "How many total complete losses of off-site power will the IAEA have reported at the Zaporizhzhia NPP since the start of the war, as of July 25, 2026?"
+    },
+    {
+      "category_slugs": [
+        "law"
+      ],
+      "post_id": 44615,
+      "question_id": 44769,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T20:35:02Z",
+      "slug": "will-the-european-commission-announce-a-formal-dma-non-co",
+      "status": "closed",
+      "title": "Will the European Commission announce a formal DMA non-compliance decision against Google for search self-preferencing before July 25, 2026?"
+    },
+    {
+      "category_slugs": [
+        "law"
+      ],
+      "post_id": 44614,
+      "question_id": 44768,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T20:02:45Z",
+      "slug": "will-utah-prosecutors-file-their-post-preliminary-hearing",
+      "status": "closed",
+      "title": "Will Utah prosecutors file their post-preliminary-hearing brief in the Tyler Robinson case before July 25, 2026?"
+    },
+    {
+      "category_slugs": [
+        "geopolitics"
+      ],
+      "post_id": 44613,
+      "question_id": 44767,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T18:09:33Z",
+      "slug": "will-a-new-round-of-direct-in-person-ukraine-russia-peace",
+      "status": "closed",
+      "title": "Will a new round of direct in-person Ukraine-Russia peace talks take place between July 11 and July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "sports-entertainment"
+      ],
+      "post_id": 44612,
+      "question_id": 44766,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T13:55:17Z",
+      "slug": "will-embark-publish-an-arc-raiders-patch-that-documents-f",
+      "status": "closed",
+      "title": "Will Embark publish an ARC Raiders patch that documents fixing a duplication exploit between July 11 and July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "cryptocurrencies"
+      ],
+      "post_id": 44611,
+      "question_id": 44765,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T11:19:30Z",
+      "slug": "will-russias-federation-council-approve-digital-currency",
+      "status": "closed",
+      "title": "Will Russia's Federation Council approve digital-currency bill No. 1194918-8 on or before July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "geopolitics"
+      ],
+      "post_id": 44610,
+      "question_id": 44764,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T11:08:35Z",
+      "slug": "will-ukraine-and-russia-conduct-at-least-one-prisoner-of",
+      "status": "closed",
+      "title": "Will Ukraine and Russia conduct at least one prisoner-of-war exchange between July 12 and July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "economy-business"
+      ],
+      "post_id": 44609,
+      "question_id": 44763,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T09:47:50Z",
+      "slug": "will-russia-extend-or-impose-a-new-gasoline-or-diesel-exp",
+      "status": "closed",
+      "title": "Will Russia extend or impose a new gasoline or diesel export ban covering any period after July 31, 2026?"
+    },
+    {
+      "category_slugs": [
+        "sports-entertainment"
+      ],
+      "post_id": 44608,
+      "question_id": 44762,
+      "question_status": "closed",
+      "question_type": "multiple_choice",
+      "scheduled_close_time": "2026-07-14T09:30:46Z",
+      "slug": "which-team-will-lead-the-al-central-at-the-end-of-play-on",
+      "status": "closed",
+      "title": "Which team will lead the AL Central at the end of play on July 23, 2026?"
+    },
+    {
+      "category_slugs": [
+        "law"
+      ],
+      "post_id": 44607,
+      "question_id": 44761,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T08:17:37Z",
+      "slug": "will-the-european-commission-adopt-its-final-dma-article",
+      "status": "closed",
+      "title": "Will the European Commission adopt its final DMA Article 6(11) specification decision on Google Search data sharing (Case DMA.100209) before July 25, 2026?"
+    },
+    {
+      "category_slugs": [
+        "computing-and-math"
+      ],
+      "post_id": 44606,
+      "question_id": 44760,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T06:34:59Z",
+      "slug": "will-the-ddr5-16gb-2gx8-spot-price-session-average-exce",
+      "status": "closed",
+      "title": "Will the DDR5 16Gb (2Gx8) spot price session average exceed $55 on DRAMeXchange around July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "economy-business"
+      ],
+      "post_id": 44605,
+      "question_id": 44759,
+      "question_status": "closed",
+      "question_type": "numeric",
+      "scheduled_close_time": "2026-07-14T06:05:07Z",
+      "slug": "what-will-the-front-month-brent-crude-oil-futures-settlem",
+      "status": "closed",
+      "title": "What will the front-month Brent crude oil futures settlement price be on July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "nuclear"
+      ],
+      "post_id": 44604,
+      "question_id": 44758,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T04:51:02Z",
+      "slug": "will-iran-allow-iaea-inspectors-on-site-access-to-any-of",
+      "status": "closed",
+      "title": "Will Iran allow IAEA inspectors on-site access to any of its uranium enrichment facilities on or before July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "economy-business"
+      ],
+      "post_id": 44603,
+      "question_id": 44757,
+      "question_status": "closed",
+      "question_type": "numeric",
+      "scheduled_close_time": "2026-07-14T04:39:22Z",
+      "slug": "what-will-nan-ya-technologys-2408tw-closing-price-be",
+      "status": "closed",
+      "title": "What will Nan Ya Technology's (2408.TW) closing price be on July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "economy-business"
+      ],
+      "post_id": 44602,
+      "question_id": 44756,
+      "question_status": "closed",
+      "question_type": "discrete",
+      "scheduled_close_time": "2026-07-14T02:35:55Z",
+      "slug": "what-will-the-french-10-year-oatgerman-bund-yield-spread",
+      "status": "closed",
+      "title": "What will the French 10-year OAT\u2013German Bund yield spread be at close on July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "geopolitics"
+      ],
+      "post_id": 44601,
+      "question_id": 44755,
+      "question_status": "closed",
+      "question_type": "discrete",
+      "scheduled_close_time": "2026-07-14T02:34:17Z",
+      "slug": "how-many-ship-transit-calls-will-imf-portwatch-record-at",
+      "status": "closed",
+      "title": "How many ship transit calls will IMF PortWatch record at the Strait of Hormuz on July 19, 2026?"
+    },
+    {
+      "category_slugs": [
+        "geopolitics"
+      ],
+      "post_id": 44600,
+      "question_id": 44754,
+      "question_status": "closed",
+      "question_type": "binary",
+      "scheduled_close_time": "2026-07-14T01:56:57Z",
+      "slug": "will-the-us-reinstate-a-broad-general-license-authorizing",
+      "status": "closed",
+      "title": "Will the US reinstate a broad general license authorizing Iranian oil exports before July 24, 2026?"
+    },
+    {
+      "category_slugs": [
+        "health-pandemics"
+      ],
+      "post_id": 44599,
+      "question_id": 44753,
+      "question_status": "closed",
+      "question_type": "numeric",
+      "scheduled_close_time": "2026-07-14T00:47:11Z",
+      "slug": "what-will-japans-national-hand-foot-and-mouth-disease-ca",
+      "status": "closed",
+      "title": "What will Japan's national hand-foot-and-mouth disease cases-per-sentinel figure be for Week 27 of 2026?"
+    },
+    {
+      "category_slugs": [
+        "geopolitics"
+      ],
+      "post_id": 44598,
+      "question_id": 44752,
+      "question_status": "closed",
+      "question_type": "numeric",
+      "scheduled_close_time": "2026-07-14T00:37:33Z",
+      "slug": "what-will-be-the-highest-overnight-number-of-ukrainian-dr",
+      "status": "closed",
+      "title": "What will be the highest overnight number of Ukrainian drones that Russia's Defense Ministry claims to have destroyed on a single night between July 12 and July 24, 2026?"
+    }
+  ],
+  "recent_question_samples_sha256": "d559690e9bae024d1b6e7c22ae8ed5486fedaee96a3da7d90b101c8d2a371328",
+  "repo_head_at_freeze": "06b71742f2f358e6a5ee71639005db83058a5424",
+  "status": "blocked_no_open_minibench_questions_at_freeze",
+  "submission_endpoints_called": false,
+  "target": "minibench",
+  "target_source": "Metaculus bot template CURRENT_MINIBENCH_ID = minibench; verified through authenticated GET /api/posts/",
+  "token_written_to_artifact": false
+}

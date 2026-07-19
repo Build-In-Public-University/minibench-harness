@@ -360,3 +360,33 @@ No real MiniBench forecast has been submitted.
 The urllib transport needs an explicit User-Agent; default urllib was rejected with HTTP 403.
 ```
 
+## MiniBench live-cycle freeze — no open submission window
+
+Freeze artifact:
+
+```text
+artifacts/metaculus-discovery/minibench_live_cycle_freeze_packet.json
+```
+
+Freeze result:
+
+```text
+target: minibench
+MiniBench project id: 33067
+series start_date: 2026-07-13T00:00:00Z
+forecasting_end_date: 2026-07-16T22:21:47Z
+close_date: 2026-07-31T00:00:00Z
+all_result_count: 60
+open_result_count: 0
+status: blocked_no_open_minibench_questions_at_freeze
+submission_endpoints_called: false
+```
+
+Meaning:
+
+```text
+The current MiniBench series is visible and hashed, but its forecasting window is closed.
+This is not a live submission freeze; it is a no-open-window boundary receipt.
+A future MiniBench live run requires a fresh freeze during an open window and separate approval before POST.
+```
+
