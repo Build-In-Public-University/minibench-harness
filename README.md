@@ -328,14 +328,34 @@ bot-testing-area authenticated read-only list: works
 read_only_question_count: 4
 forecast payload shape: constructed
 comment payload shape: constructed
-submission_endpoints_called: false
 submit path guard: requires explicit allow_submit=True
+bot-testing-area POST smoke: completed
+MiniBench/live submission: not attempted
+```
+
+POST smoke receipt:
+
+```text
+artifacts/metaculus-discovery/bot_testing_area_post_smoke_receipt.json
+```
+
+POST smoke result:
+
+```text
+target: bot-testing-area
+post_id: 43327
+question_id: 43332
+probability_yes: 0.50
+forecast endpoint status: 201
+comment endpoint status: 201
+readback status: 200
 ```
 
 Important:
 
 ```text
 The adapter is dry-run/no-submit by default.
+A real bot-testing-area smoke forecast/comment was submitted after explicit approval.
 No real MiniBench forecast has been submitted.
 The urllib transport needs an explicit User-Agent; default urllib was rejected with HTTP 403.
 ```

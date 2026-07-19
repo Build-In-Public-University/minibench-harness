@@ -1,0 +1,88 @@
+{
+  "artifact": "metaculus_bot_testing_area_post_smoke_receipt",
+  "comment_text_sha256": "33d527188e93d9625a6da950d80530c669b8ba7083fd13094ceef6e9e5b9ec6c",
+  "created_at_utc": "2026-07-19T21:21:59.034469+00:00",
+  "not_minibench": true,
+  "probability_yes": 0.5,
+  "raw_call_receipts": [
+    {
+      "body_sha256": "1bde309599ccf7238bba0c43512f46ae7c3de22fd376324581ddde890b047c8f",
+      "method": "GET",
+      "ok": true,
+      "path": "/posts/",
+      "status": 200
+    },
+    {
+      "body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "method": "POST",
+      "ok": true,
+      "path": "/questions/forecast/",
+      "status": 201
+    },
+    {
+      "body_sha256": "f5bb70c749b47ba5eb6ac3f87c2f8a8bd0733eb9c0d9076c6a3f49d9e5d17dfb",
+      "method": "POST",
+      "ok": true,
+      "path": "/comments/create/",
+      "status": 201
+    },
+    {
+      "body_sha256": "298e4bd2c16a88aa26556e63f8f81eced23f7c676c9617f9bfc52943d7f845f5",
+      "method": "GET",
+      "ok": true,
+      "path": "/posts/43327/",
+      "status": 200
+    }
+  ],
+  "readback": {
+    "body_sha256": "298e4bd2c16a88aa26556e63f8f81eced23f7c676c9617f9bfc52943d7f845f5",
+    "post_id": 43327,
+    "status": "open",
+    "title": "Will any of Belgium, France, Italy, Luxembourg, Netherlands, and/or Germany leave the EU before 2027?",
+    "url": null
+  },
+  "scope": "one binary bot-testing-area forecast/comment smoke",
+  "selected_question": {
+    "description_redacted": "redacted from public smoke receipt; hash retained",
+    "description_sha256": "2282bb45802526bcf18142e06a1d68300d118503b0e4f0398f3341528e4defd7",
+    "post_id": 43327,
+    "question_id": 43332,
+    "resolution_criteria_redacted": "redacted from public smoke receipt; hash retained",
+    "resolution_criteria_sha256": "8922a2abc3de0052363152f9b9e4c28fcd94dec80f09aded9c7a3a1bcd09595c",
+    "scheduled_close_time": "2026-12-31T23:59:00Z",
+    "status": "open",
+    "title": "Will any of Belgium, France, Italy, Luxembourg, Netherlands, and/or Germany leave the EU before 2027?",
+    "type": "binary",
+    "url": null
+  },
+  "submission_receipt": {
+    "artifact": "metaculus_submission_transport_receipt",
+    "comment_endpoint": "/comments/create/",
+    "comment_response_sha256": "f5bb70c749b47ba5eb6ac3f87c2f8a8bd0733eb9c0d9076c6a3f49d9e5d17dfb",
+    "forecast_endpoint": "/questions/forecast/",
+    "forecast_response_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "payload": {
+      "comment": {
+        "included_forecast": true,
+        "is_private": true,
+        "on_post": 43327,
+        "parent": null,
+        "text": "Bot-testing-area smoke test for Build-In-Public-University/minibench-harness. Neutral 0.50 binary forecast to verify API transport only; not a MiniBench/live tournament run."
+      },
+      "forecast": [
+        {
+          "continuous_cdf": null,
+          "probability_yes": 0.5,
+          "probability_yes_per_category": null,
+          "question": 43332,
+          "source": "api"
+        }
+      ]
+    },
+    "payload_sha256": "252f63a3739e3362314efc0d25a01fbe4789813a9d7f1efdca12e76ae4564970",
+    "status": "submitted",
+    "submission_endpoints_called": true
+  },
+  "target": "bot-testing-area",
+  "token_written_to_artifact": false
+}
