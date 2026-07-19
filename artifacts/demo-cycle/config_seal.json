@@ -1,0 +1,23 @@
+{
+  "artifact": "minibench_harness_config_seal",
+  "config": {
+    "compressor": {
+      "id": "marvin-b2a-forecast-v0",
+      "version": "0.1.0"
+    },
+    "cycle_id": "minibench-demo-cycle",
+    "fixed_point": {
+      "question_count": 2,
+      "settlement_date": "demo"
+    },
+    "question_source": "MiniBench external notary placeholder"
+  },
+  "sealed_at_utc": "2026-07-19T00:25:52.406511+00:00",
+  "sha256": "5f85b6ca581f466c114ee373071bdfc7b3a01fd32c823dce5ae2d0189b30838a",
+  "status": "sealed_waiting_for_external_notary_cycle",
+  "stopping_law": {
+    "interim_results": "sensitivity_only_no_promotion",
+    "optional_stopping_forbidden": true,
+    "primary_evaluation": "fixed_point_only"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "body_sha256": "b057eaea3c825312b1edc67721738a5eb9d69418db1af0a0e20e6ae7105f81a3",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:36:12.353195+00:00",
+  "name": "posts_tournament_bot-testing-area",
+  "status": 200,
+  "summary": {
+    "count": null,
+    "result_count": 7,
+    "samples": [
+      {
+        "id": 43327,
+        "projects_tournament": null,
+        "slug": "major-state-exits-eu-before-2027",
+        "status": "open",
+        "title": "Will any of Belgium, France, Italy, Luxembourg, Netherlands, and/or Germany leave the EU before 2027?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 43326,
+        "projects_tournament": null,
+        "slug": "us-house-plurality-after-2026-midterms",
+        "status": "open",
+        "title": "Which party will hold the most seats in the US House of Representatives after the 2026 elections?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 43325,
+        "projects_tournament": null,
+        "slug": "us-presidents-net-worth-4x-during-their-presidency",
+        "status": "open",
+        "title": "Will the sitting U.S. president\u2019s net worth reach \u22654x its value before they became president at any point in the following years?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 43324,
+        "projects_tournament": null,
+        "slug": "date-of-end-of-martial-law-in-ukraine",
+        "status": "open",
+        "title": "When will martial law be lifted in at least 3/4 of Ukraine?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 43323,
+        "projects_tournament": null,
+        "slug": "trumps-approval-on-dec-31-2026",
+        "status": "open",
+        "title": "What will be Donald Trump's net approval on December 31, 2026?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 43322,
+        "projects_tournament": null,
+        "slug": "what-will-the-interest-rate-on-us-federal-governments-debt-be-in-these-years",
+        "status": "open",
+        "title": "What will the average interest rate on the US federal government's total debt be at the end of these fiscal years?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 43321,
+        "projects_tournament": null,
+        "slug": "of-top-us-officials-out-in-2026",
+        "status": "open",
+        "title": "How many of these 15 top US executive branch officials will be out before 2027?",
+        "user_permission": "forecaster"
+      }
+    ]
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=bot-testing-area&statuses=open&limit=100"
+}

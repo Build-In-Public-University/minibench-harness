@@ -1,0 +1,13 @@
+{
+  "body_sha256": "3bb7dd7151956e30e21668a139e38518b0657d71d3b92115d602775b6fcfd0d6",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:36:13.189554+00:00",
+  "name": "posts_tournament_warmup-minibench",
+  "status": 400,
+  "summary": {
+    "count": null,
+    "result_count": null,
+    "samples": []
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=warmup-minibench&statuses=open&limit=100"
+}

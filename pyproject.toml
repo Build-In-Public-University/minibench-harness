@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minibench-harness"
+version = "0.1.0"
+description = "B2A MiniBench forecasting harness with sealed config, null ducks, settlements, and fixed-point calendar discipline."
+requires-python = ">=3.11"
+
+[project.scripts]
+minibench-harness = "minibench_harness.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

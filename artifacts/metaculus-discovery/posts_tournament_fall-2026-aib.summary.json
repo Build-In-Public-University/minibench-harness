@@ -1,0 +1,13 @@
+{
+  "body_sha256": "e48c807be2f2723dc80d8db4f20b6f37d35d094d1c2fbf3b9069eaf9b6dde3c3",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:36:11.218317+00:00",
+  "name": "posts_tournament_fall-2026-aib",
+  "status": 400,
+  "summary": {
+    "count": null,
+    "result_count": null,
+    "samples": []
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=fall-2026-aib&statuses=open&limit=100"
+}

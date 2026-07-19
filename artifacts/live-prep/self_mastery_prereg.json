@@ -1,0 +1,19 @@
+{
+  "artifact": "self_mastery_preregistration",
+  "body": {
+    "cycle_id": "minibench-live-prep-2026-07-18",
+    "demo_hygiene": "n2_synthetic_smoke_test_not_track_record",
+    "interpretation": "self-mastery band for first real MiniBench cycle; not adjusted after seeing questions or outcomes",
+    "predicted_mean_brier_range": [
+      0.18,
+      0.24
+    ],
+    "predicted_percentile_band": [
+      40,
+      65
+    ],
+    "status": "sealed_before_first_live_forecast"
+  },
+  "sealed_at_utc": "2026-07-19T00:02:13.926593+00:00",
+  "sha256": "b6d6aa72538d7ca9fb3aaa6fbf6a3c09b2b8c599171e599aee3a57c88acb9169"
+}

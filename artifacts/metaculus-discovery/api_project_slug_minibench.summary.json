@@ -1,0 +1,15 @@
+{
+  "body_sha256": "004341742d7bef2a31d80c88eb31fdf852ef6d9e238163fba345794baf20de9e",
+  "content_type": "text/html; charset=utf-8",
+  "fetched_at_utc": "2026-07-19T12:37:21.396949+00:00",
+  "name": "api_project_slug_minibench",
+  "status": 404,
+  "summary": {
+    "contains_59_questions": false,
+    "contains_open": false,
+    "hrefs": [],
+    "html_title": "Not Found",
+    "ids": []
+  },
+  "url": "https://www.metaculus.com/api/projects/minibench/"
+}

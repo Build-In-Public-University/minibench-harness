@@ -1,0 +1,20 @@
+{
+  "body_sha256": "e0b04321d1b4af49c66c2546a59aae01d07ab60f6c3c5adf84eb8c9cb508ffde",
+  "fetched_at_utc": "2026-07-19T13:10:48.394901+00:00",
+  "name": "fresh_token_bot_testing_area_health",
+  "status": 200,
+  "summary": {
+    "result_count": 1,
+    "sample_project_slugs": [],
+    "sample_titles": [
+      {
+        "id": 43327,
+        "slug": "major-state-exits-eu-before-2027",
+        "status": "open",
+        "title": "Will any of Belgium, France, Italy, Luxembourg, Netherlands, and/or Germany leave the EU before 2027?",
+        "user_permission": "forecaster"
+      }
+    ]
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=bot-testing-area&statuses=open&limit=1"
+}

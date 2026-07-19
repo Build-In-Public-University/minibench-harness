@@ -1,0 +1,48 @@
+{
+  "artifact": "futureeval_public_scoreboard_receipt",
+  "claim_language": {
+    "cycle_one": "calibration_data_not_track_record",
+    "leaderboard_claim": "placement_is_secondary_to_derivative_process_improvement",
+    "unit_of_claim": "season_over_season_hash_committed_process_trajectory"
+  },
+  "derived": {
+    "gap_as_fraction_of_best_model_score": 0.8095,
+    "interpretation": "public coordinate system shows process gap, not saturated model-capability ceiling",
+    "pro_minus_best_model_gap": 16.06
+  },
+  "leaderboard": {
+    "best_model": {
+      "name": "Gemini 3.1 Pro High",
+      "score": 19.84
+    },
+    "metaculus_community": 25.96,
+    "metaculus_pro_forecasters": 35.9,
+    "pros_won_every_season_so_far": true,
+    "summer_2026_live_prize_pool_usd": 58000
+  },
+  "published_failure_mode_checks": {
+    "historical_seasonality_over_anchor": {
+      "detected_on_page": true,
+      "harness_check": "force_current_evidence_vs_historical_pattern_contrast_block"
+    },
+    "self_retrieval_failure": {
+      "detected_on_page": true,
+      "harness_check": "verify_self_referential_claims_against_fetched_evidence_before_submission"
+    },
+    "status_quo_bias": {
+      "baseline_mapping": "persistence_duck",
+      "detected_on_page": true,
+      "harness_check": "report beat/loss against persistence duck every cycle"
+    }
+  },
+  "retrieved_at_utc": "2026-07-19T00:25:01.405534+00:00",
+  "scoring": {
+    "internal_records": [
+      "brier",
+      "binary_log_loss_proxy"
+    ],
+    "venue_score_basis": "unified_forecasting_score_based_on_log_scores",
+    "warning": "optimize and settle in the venue currency; Brier remains diagnostic but not sufficient"
+  },
+  "source": "https://www.metaculus.com/futureeval/"
+}

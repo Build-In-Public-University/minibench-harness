@@ -1,0 +1,13 @@
+{
+  "body_sha256": "0c31513a2c888ff0aaf4b0fe418829af1b324f69d027c05b1df1226a84c410fd",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:37:21.795977+00:00",
+  "name": "posts_tournaments_minibench-2026-06-29",
+  "status": 200,
+  "summary": {
+    "count": null,
+    "result_count": 0,
+    "samples": []
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=minibench-2026-06-29&statuses=open&limit=100"
+}

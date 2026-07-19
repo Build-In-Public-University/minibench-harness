@@ -1,0 +1,32 @@
+{
+  "artifact": "settlement_calendar",
+  "forbidden_until_settlement": {
+    "atlas_future_windows": "no arena v2 promotion before fixed point",
+    "minibench_forecasting_resolutions": "no calibration claim from interim drips",
+    "raw_text_corpus_work": "no promotion-grade census claim without raw text evidence blocks",
+    "twitter_funnel_t30_settlement": "no funnel claim before T+30/T+60 settlement"
+  },
+  "status": "active",
+  "streams": [
+    {
+      "next_settlement": "next two-week cycle close",
+      "resolves": "cycle brier vs ducks",
+      "stream": "minibench_forecasting_resolutions"
+    },
+    {
+      "next_settlement": "after 251 future windows and 74 positives",
+      "resolves": "arena v2 fixed point",
+      "stream": "atlas_future_windows"
+    },
+    {
+      "next_settlement": "T+30 from first sealed post",
+      "resolves": "funnel stage rates",
+      "stream": "twitter_funnel_t30_settlement"
+    },
+    {
+      "next_settlement": "rolling receipts",
+      "resolves": "substrate coverage, not model promotion",
+      "stream": "raw_text_corpus_work"
+    }
+  ]
+}

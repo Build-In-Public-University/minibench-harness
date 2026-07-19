@@ -1,0 +1,63 @@
+{
+  "artifact": "metaculus_fresh_token_health_and_cycle_slug_probe",
+  "created_at_utc": "2026-07-19T13:10:52.792459+00:00",
+  "cycle_slug_probe": {
+    "cycle_slug_projects_minibench": {
+      "result_count": 20,
+      "sample_project_slugs": [
+        "respiratory-outlook-25-26"
+      ],
+      "status": 200
+    },
+    "cycle_slug_projects_minibench-2026-06-15": {
+      "result_count": 20,
+      "sample_project_slugs": [
+        "respiratory-outlook-25-26"
+      ],
+      "status": 200
+    },
+    "cycle_slug_projects_minibench-2026-06-29": {
+      "result_count": 20,
+      "sample_project_slugs": [
+        "respiratory-outlook-25-26"
+      ],
+      "status": 200
+    },
+    "cycle_slug_projects_minibench-2026-07-13": {
+      "result_count": 20,
+      "sample_project_slugs": [
+        "respiratory-outlook-25-26"
+      ],
+      "status": 200
+    },
+    "cycle_slug_tournaments_minibench": {
+      "result_count": 0,
+      "sample_project_slugs": [],
+      "status": 200
+    },
+    "cycle_slug_tournaments_minibench-2026-06-15": {
+      "result_count": 0,
+      "sample_project_slugs": [],
+      "status": 200
+    },
+    "cycle_slug_tournaments_minibench-2026-06-29": {
+      "result_count": 0,
+      "sample_project_slugs": [],
+      "status": 200
+    },
+    "cycle_slug_tournaments_minibench-2026-07-13": {
+      "result_count": null,
+      "sample_project_slugs": [],
+      "status": 400
+    }
+  },
+  "fresh_token_health": {
+    "body_sha256": "e0b04321d1b4af49c66c2546a59aae01d07ab60f6c3c5adf84eb8c9cb508ffde",
+    "result_count": 1,
+    "status": 200
+  },
+  "status": "complete_no_submission",
+  "submission_endpoints_called": false,
+  "token_source": "/Users/leoguinan/.hermes/.env",
+  "token_written_to_artifacts": false
+}

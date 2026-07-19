@@ -1,0 +1,12 @@
+{
+  "body_sha256": "ca2f99118f3f13284ddccfc74fbca8a7da01c6958ce4bf8112e2bb26eb192ef0",
+  "fetched_at_utc": "2026-07-19T13:10:49.565581+00:00",
+  "name": "cycle_slug_tournaments_minibench-2026-06-15",
+  "status": 200,
+  "summary": {
+    "result_count": 0,
+    "sample_project_slugs": [],
+    "sample_titles": []
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=minibench-2026-06-15&statuses=open&limit=20"
+}

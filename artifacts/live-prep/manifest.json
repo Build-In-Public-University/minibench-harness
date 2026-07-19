@@ -1,0 +1,28 @@
+{
+  "artifact": "minibench_live_manifest",
+  "artifacts": {
+    "futureeval_receipt": {
+      "path": "futureeval_receipt.json",
+      "sha256": "2bfde266100aaca1226aabf0c6dc5b27815b982a57b5a965f794855b5baecb4e"
+    },
+    "futureeval_source_extract": {
+      "path": "futureeval_source_extract.json",
+      "sha256": "1e9880414846c6ae84c6ccabf47a2f0cdb831447a96a7758769d7e7759914e0e"
+    },
+    "live_config_seal": {
+      "path": "live_config_seal.json",
+      "sha256": "a303966be4674dcaf831b53ac316012a071d12a9f79c60bc798a044e3066338c"
+    },
+    "live_rules_receipt": {
+      "path": "live_rules_receipt.json",
+      "sha256": "64cd5fa08f6d832adf3469214df3e84e7296c9e460be06098694104bdafa19ab"
+    },
+    "self_mastery_prereg": {
+      "path": "self_mastery_prereg.json",
+      "sha256": "38558554c62afeed84580bb2faa27d096b956b38f521a36a64e87f4cb089ac68"
+    }
+  },
+  "created_at_utc": "2026-07-19T00:02:13.928553+00:00",
+  "first_live_forecast_allowed_after": "live_config_seal hash is recorded here and current tournament ID is discovered",
+  "status": "sealed_before_first_live_forecast"
+}

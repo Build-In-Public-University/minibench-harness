@@ -1,0 +1,19 @@
+{
+  "body_sha256": "55a70776af8a72f09dea1df5d445e55e408ebcbf91e68efd4b1b75cb0a4d1fbd",
+  "content_type": "text/html; charset=UTF-8",
+  "fetched_at_utc": "2026-07-19T12:37:29.618674+00:00",
+  "name": "page_tournament_minibench-2026-07-13",
+  "status": 403,
+  "summary": {
+    "contains_59_questions": false,
+    "contains_open": false,
+    "hrefs": [
+      "/tournament/minibench-2026-07-13/?__cf_chl_f_tk=EvtPeAefxMmrfGDNX.BX2SKB_MXh.MaMQ2IZIEX_Gk8-1784464649-1.0.1.1-jMWKfHxiCkai14KAUeLZPxlsVYTgrb64mNjc8mgUjjw",
+      "/tournament/minibench-2026-07-13/?__cf_chl_rt_tk=EvtPeAefxMmrfGDNX.BX2SKB_MXh.MaMQ2IZIEX_Gk8-1784464649-1.0.1.1-jMWKfHxiCkai14KAUeLZPxlsVYTgrb64mNjc8mgUjjw",
+      "/tournament/minibench-2026-07-13/?__cf_chl_tk=EvtPeAefxMmrfGDNX.BX2SKB_MXh.MaMQ2IZIEX_Gk8-1784464649-1.0.1.1-jMWKfHxiCkai14KAUeLZPxlsVYTgrb64mNjc8mgUjjw"
+    ],
+    "html_title": "Just a moment...",
+    "ids": []
+  },
+  "url": "https://www.metaculus.com/tournament/minibench-2026-07-13/"
+}

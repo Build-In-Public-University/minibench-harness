@@ -1,0 +1,12 @@
+{
+  "body_sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+  "content_type": "text/plain; charset=UTF-8",
+  "fetched_at_utc": "2026-07-19T12:36:14.287871+00:00",
+  "name": "endpoint_api_projects__search_MiniBench_limit_100",
+  "status": 429,
+  "summary": {
+    "body_head": "error code: 1015\n",
+    "parse_error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  "url": "https://www.metaculus.com/api/projects/?search=MiniBench&limit=100"
+}

@@ -1,0 +1,16 @@
+{
+  "beat_ducks": {
+    "binary_log_loss_proxy": {
+      "base_rate": 2,
+      "persistence": 2
+    },
+    "brier": {
+      "base_rate": 2,
+      "persistence": 2
+    }
+  },
+  "forecast_count": 2,
+  "mean_binary_log_loss_proxy": 0.4338,
+  "mean_brier": 0.125,
+  "settled_count": 2
+}

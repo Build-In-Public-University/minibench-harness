@@ -1,0 +1,277 @@
+{
+  "artifact": "metaculus_read_only_discovery_manifest",
+  "created_at_utc": "2026-07-19T12:35:39.165308+00:00",
+  "requests": [
+    {
+      "body_sha256": "1ede0c85f99a83a9191ea999a8ed2702a583b7b8cf7cd6d35089a09ecc0c07a4",
+      "name": "posts_minibench_slug",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=minibench&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "9f65d5f63ebb9e70dcaf4c0f6fd0f99627b5f81d64f0d020defb361823d63999",
+      "name": "posts_bot_testing_area",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=bot-testing-area&statuses=open&limit=20"
+    },
+    {
+      "body_sha256": "dba7f6c2578089a4640c3a957e530f416f1ee91fadf87b885e2516178077da1b",
+      "name": "posts_futureeval_search",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?search=MiniBench&statuses=open&limit=20"
+    },
+    {
+      "body_sha256": "17a5cccb0cd5bd98042f8729805a16651d21c49a416acc2c07c8bc1911843d10",
+      "name": "posts_ai_search",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?search=AI+Forecasting+Benchmark+MiniBench&statuses=open&limit=20"
+    },
+    {
+      "body_sha256": "8e408e38560ed02641db8d35fb095cb188a869b46d91e26b2cdb1ce501bdf149",
+      "name": "api2_questions_minibench_project_unknown",
+      "status": 200,
+      "url": "https://www.metaculus.com/api2/questions/?limit=100&status=open&type=forecast&forecast_type=binary&include_description=true"
+    },
+    {
+      "body_sha256": "3dd5765d414d03a89b6ad5452581038a8d91781a79689c4e89fe658a96715b30",
+      "name": "posts_tournament_summer-aib-2026",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=summer-aib-2026&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "b12684c90f92cecdaebb380b8e61c45272b9cae86b5ccf9fedfeb37ff6d8d393",
+      "name": "posts_tournament_summer-2026-aib",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=summer-2026-aib&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "ca8c247f6198c537bda02ecae7efe8b7b90dbf32be7dc34b57dec1d8c94a6f10",
+      "name": "posts_tournament_summer-2026-futureeval",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=summer-2026-futureeval&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "6a1d2c782796f6bbce9427a4e0779618261bfb165b5f3088bbdd60b9428a4177",
+      "name": "posts_tournament_futureeval-summer-2026",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=futureeval-summer-2026&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "58a3d83305e3ff34cfb74669a5e69e71eb975f08cb4793283480956a7f6905b5",
+      "name": "posts_tournament_fall-aib-2026",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=fall-aib-2026&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "e48c807be2f2723dc80d8db4f20b6f37d35d094d1c2fbf3b9069eaf9b6dde3c3",
+      "name": "posts_tournament_fall-2026-aib",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=fall-2026-aib&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "9e505b54c357a4319c75bb9414cb6159f02365034ceb91a35fd0852c729a9b79",
+      "name": "posts_tournament_aibq3",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=aibq3&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "4c7fe013982907b53c67e6224a456f2513cb90aa209841d45d6d791526f2acde",
+      "name": "posts_tournament_aibq4",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=aibq4&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "b057eaea3c825312b1edc67721738a5eb9d69418db1af0a0e20e6ae7105f81a3",
+      "name": "posts_tournament_bot-testing-area",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=bot-testing-area&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "1ede0c85f99a83a9191ea999a8ed2702a583b7b8cf7cd6d35089a09ecc0c07a4",
+      "name": "posts_tournament_minibench",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=minibench&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "3bb7dd7151956e30e21668a139e38518b0657d71d3b92115d602775b6fcfd0d6",
+      "name": "posts_tournament_warmup-minibench",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=warmup-minibench&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "5d86a9be0ebc15a8aa84808454305f82ea783cd1b2031fb91f6cac8394b6fb8f",
+      "name": "endpoint_api_projects",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/"
+    },
+    {
+      "body_sha256": "2429bbfcd70d2a708dda8f5f468b8b535aa09736d1396d6c6fe76eaacb105c84",
+      "name": "endpoint_api_projects__limit_100",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/?limit=100"
+    },
+    {
+      "body_sha256": "ba2dccb517163df96253d65100f1c8f4cf6519802872abbf730df2c185bbc4ed",
+      "name": "endpoint_api_projects__type_tournament_limit_100",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/?type=tournament&limit=100"
+    },
+    {
+      "body_sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "name": "endpoint_api_projects__search_MiniBench_limit_100",
+      "status": 429,
+      "url": "https://www.metaculus.com/api/projects/?search=MiniBench&limit=100"
+    },
+    {
+      "body_sha256": "d4246da876aad9452affaf5883266a77c0680732b96c4e4f02f4abf45debeda9",
+      "name": "endpoint_api_projects__search_FutureEval_limit_100",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/?search=FutureEval&limit=100"
+    },
+    {
+      "body_sha256": "207a1155f1ffc98947094c746dd1f0731d9b0fcbe4bfbefe7895037900213147",
+      "name": "endpoint_api_projects__search_Summer_limit_100",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/?search=Summer&limit=100"
+    },
+    {
+      "body_sha256": "ba9fbf164e8f24dd5d5cc46426b1b02501d68c3282637580ebee23b08f813cf0",
+      "name": "endpoint_api_tournaments",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/tournaments/"
+    },
+    {
+      "body_sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "name": "endpoint_api_tournaments__limit_100",
+      "status": 429,
+      "url": "https://www.metaculus.com/api/tournaments/?limit=100"
+    },
+    {
+      "body_sha256": "1ede0c85f99a83a9191ea999a8ed2702a583b7b8cf7cd6d35089a09ecc0c07a4",
+      "name": "posts_tournaments_minibench",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=minibench&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "339d58f7b5c51ed33d5374e6aebd7d359ba1b1479d46230c7bfe85c375835dfa",
+      "name": "posts_projects_minibench",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?projects=minibench&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "924be2c88d91dfe828313d1c083ed13a3240c4ecf8faaada0ac9802823fddb3c",
+      "name": "posts_project_minibench",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?project=minibench&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "b918eebfab4e65c5c4d11326c9cd63be0e01fc2c1b32887bff3e40d4ed25bfc2",
+      "name": "page_tournament_minibench",
+      "status": 403,
+      "url": "https://www.metaculus.com/tournament/minibench/"
+    },
+    {
+      "body_sha256": "004341742d7bef2a31d80c88eb31fdf852ef6d9e238163fba345794baf20de9e",
+      "name": "api_project_slug_minibench",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/minibench/"
+    },
+    {
+      "body_sha256": "0c31513a2c888ff0aaf4b0fe418829af1b324f69d027c05b1df1226a84c410fd",
+      "name": "posts_tournaments_minibench-2026-06-29",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=minibench-2026-06-29&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "6ee21d29305fadc6ab2da594c57433d2171a257b916d1c70be447862986437ff",
+      "name": "posts_projects_minibench-2026-06-29",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?projects=minibench-2026-06-29&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "3d31dec7250d2161bfb37463b4fdc3a5c5788bbeab6d2611a65b3166fb1ed0d7",
+      "name": "posts_project_minibench-2026-06-29",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?project=minibench-2026-06-29&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "d3a2b0e555ad58dbc7be3c6080dc1b6a2e0af8f6e8b01b8e8293eb36eacf6c9a",
+      "name": "page_tournament_minibench-2026-06-29",
+      "status": 403,
+      "url": "https://www.metaculus.com/tournament/minibench-2026-06-29/"
+    },
+    {
+      "body_sha256": "02346bed145f742246e6ce3a6b8e4cfd3eb21284fa19b5fe96512ee59ae62c12",
+      "name": "api_project_slug_minibench-2026-06-29",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/minibench-2026-06-29/"
+    },
+    {
+      "body_sha256": "faeaccc097fdb0af9f84ce7295ceada8a3e5175e3dfd0f564376a0fa698a5c85",
+      "name": "posts_tournaments_minibench-2026-07-13",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=minibench-2026-07-13&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "d5f4a43a6ccdf22d968ebf7085ad0cc49f7852cad4f73aec2e35056e36785456",
+      "name": "posts_projects_minibench-2026-07-13",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?projects=minibench-2026-07-13&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "284cbe3eb1128aa17889d5aa5d59cffd3817586d127485ab745411c5e022fb0a",
+      "name": "posts_project_minibench-2026-07-13",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?project=minibench-2026-07-13&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "55a70776af8a72f09dea1df5d445e55e408ebcbf91e68efd4b1b75cb0a4d1fbd",
+      "name": "page_tournament_minibench-2026-07-13",
+      "status": 403,
+      "url": "https://www.metaculus.com/tournament/minibench-2026-07-13/"
+    },
+    {
+      "body_sha256": "7bb38c5c5f0218dcea5f5e488832ad78001d69c7803e82f23c380afe67c0816c",
+      "name": "api_project_slug_minibench-2026-07-13",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/minibench-2026-07-13/"
+    },
+    {
+      "body_sha256": "167970f484839788cbca69032abeb437b5b0bfdd329efa1afa03854a38c81a31",
+      "name": "posts_tournaments_minibench-2026-07-27",
+      "status": 400,
+      "url": "https://www.metaculus.com/api/posts/?tournaments=minibench-2026-07-27&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "f88e842bcbf8b0e71c4b69df5d52448d44b6dfbba797318a7b6644f359c0e418",
+      "name": "posts_projects_minibench-2026-07-27",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?projects=minibench-2026-07-27&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "302757f7d8081d9d8bdd1811bbef0cfab369f411965bc98c09cc55b1c5495956",
+      "name": "posts_project_minibench-2026-07-27",
+      "status": 200,
+      "url": "https://www.metaculus.com/api/posts/?project=minibench-2026-07-27&statuses=open&limit=100"
+    },
+    {
+      "body_sha256": "41d6002f4882d387aefec98730a2fae9eb91734c5939c5f9f88e513047a5d92f",
+      "name": "page_tournament_minibench-2026-07-27",
+      "status": 403,
+      "url": "https://www.metaculus.com/tournament/minibench-2026-07-27/"
+    },
+    {
+      "body_sha256": "bf95c62079b8eaaba3e7f0a81f05e6f2a0c694e12a5e7092cfc5ad6cfac119eb",
+      "name": "api_project_slug_minibench-2026-07-27",
+      "status": 404,
+      "url": "https://www.metaculus.com/api/projects/minibench-2026-07-27/"
+    }
+  ],
+  "status": "complete_token_used_not_stored",
+  "summary_artifact": {
+    "path": "discovery_summary.json",
+    "sha256": "770d531f72cf65920e146385224bc66a50088bf11c1ca243253bcba430049e35"
+  },
+  "token_storage": "not_written_to_disk",
+  "updated_at_utc": "2026-07-19T12:37:34.991316+00:00"
+}

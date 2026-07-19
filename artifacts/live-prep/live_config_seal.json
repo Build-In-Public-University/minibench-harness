@@ -1,0 +1,56 @@
+{
+  "artifact": "minibench_harness_config_seal",
+  "config": {
+    "artifact": "minibench_live_harness_config",
+    "competitor_clock": {
+      "evaluation_window_starts": "strictly_after_config_seal_hash_lands_in_manifest",
+      "pin_timestamp_source": "live_config_seal.sealed_at_utc",
+      "quiet_upgrade_policy": "any prompt/model/retrieval/duck change after live forecasts exist is a new competitor"
+    },
+    "compressor": {
+      "id": "marvin-b2a-forecast-v0",
+      "prompt_hash": "4f05f2aeb91e830d6ec83b5e0dcbd936581457bc4c28e88ab6e364133b24b1d3",
+      "prompt_text": "Forecast MiniBench questions using cutoff-stamped evidence blocks; output probability and reasoning comment; no human-in-loop modification after question retrieval.",
+      "version": "0.1.0"
+    },
+    "cycle_id": "minibench-live-prep-2026-07-18",
+    "duck_definitions": {
+      "base_rate": {
+        "definition": "constant_p_0_5_always",
+        "reason": "arbitrary binary questions have no trustworthy global live class rate before category priors are sealed"
+      },
+      "category_prior": {
+        "definition": "fixed prior by question category, enabled only after category mapping and prior table are sealed before forecasts",
+        "status": "declared_but_disabled_until_category_base_rates_exist"
+      },
+      "persistence": {
+        "definition": "previous forecast probability for the same question when available",
+        "first_forecast_convention": "inherits_base_rate_duck"
+      }
+    },
+    "fixed_point": {
+      "interim_results": "sensitivity_only_no_calibration_claim",
+      "primary_look": "one_full_cycle_all_resolved_questions",
+      "question_count": 59,
+      "settlement_date": "first_full_cycle_close_after_live_submission"
+    },
+    "model": {
+      "name": "to-be-set-before-live-submit",
+      "provider": "openrouter"
+    },
+    "retrieval": {
+      "cutoff_policy": "retrieved_before_submission",
+      "max_sources": 5,
+      "search_provider": "hermes_web_search"
+    },
+    "token_policy": "METACULUS_TOKEN from environment or private ignored file only; never commit"
+  },
+  "sealed_at_utc": "2026-07-19T00:02:13.926079+00:00",
+  "sha256": "4ca072441f22bfdbcb0b96da6ee0ccc8bd7463c672887ed35fe53ab40cd3aba6",
+  "status": "sealed_waiting_for_external_notary_cycle",
+  "stopping_law": {
+    "interim_results": "sensitivity_only_no_promotion",
+    "optional_stopping_forbidden": true,
+    "primary_evaluation": "fixed_point_only"
+  }
+}

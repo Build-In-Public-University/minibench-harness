@@ -1,0 +1,205 @@
+{
+  "body_sha256": "dba7f6c2578089a4640c3a957e530f416f1ee91fadf87b885e2516178077da1b",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:35:36.551553+00:00",
+  "name": "posts_futureeval_search",
+  "status": 200,
+  "summary": {
+    "count": null,
+    "next_present": true,
+    "result_count": 20,
+    "sample_posts": [
+      {
+        "default_project": null,
+        "id": 39703,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "approved",
+        "title": "\ud83e\udd16 The Fall AI Benchmark Tournament and MiniBench are now open!",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43340,
+        "projects_tournament": [
+          {
+            "bot_leaderboard_status": "bots_only",
+            "close_date": "2026-11-05T00:00:00Z",
+            "created_at": "2026-04-29T03:09:15.778463Z",
+            "default_permission": "forecaster",
+            "description_preview": "<p>Welcome to the Summer 2026 FutureEval Bot Tournament! This is a bot-only competition where bot-makers attempt to push AI to its limits in",
+            "edited_at": "2026-07-19T11:59:17.557993Z",
+            "forecasting_end_date": "2026-09-06T00:00:00Z",
+            "header_image": "https://cdn.metaculus.com/cover-summer_5fNCoRW.webp",
+            "html_metadata_json": null,
+            "id": 33022,
+            "is_current_content_translated": false,
+            "is_ongoing": true,
+            "name": "Summer 2026 FutureEval Bot Tournament",
+            "order": 1,
+            "prize_pool": "50000.00",
+            "score_type": "spot_peer_tournament",
+            "show_on_homepage": false,
+            "slug": "summer-futureeval-2026",
+            "start_date": "2026-05-18T00:00:00Z",
+            "type": "tournament",
+            "user_permission": null,
+            "visibility": "not_in_main_feed"
+          }
+        ],
+        "question_count": 0,
+        "status": "approved",
+        "title": "Announcing Summer 2026 FutureEval Bot Tournament",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 41189,
+        "projects_tournament": [
+          {
+            "bot_leaderboard_status": "bots_only",
+            "close_date": "2026-07-05T00:00:00Z",
+            "created_at": "2025-12-12T16:53:45.337955Z",
+            "default_permission": "forecaster",
+            "description_preview": "<p><em>This tournament will have no more new questions. The next tournament in this series can be found <a href=\"https://www.metaculus.com/t",
+            "edited_at": "2026-07-01T10:40:03.030476Z",
+            "forecasting_end_date": "2026-05-06T00:00:00Z",
+            "header_image": "https://cdn.metaculus.com/aib-spring-cover.webp",
+            "html_metadata_json": null,
+            "id": 32916,
+            "is_current_content_translated": false,
+            "is_ongoing": false,
+            "name": "Spring 2026 FutureEval Bot Tournament",
+            "order": 1,
+            "prize_pool": "50000.00",
+            "score_type": "spot_peer_tournament",
+            "show_on_homepage": true,
+            "slug": "spring-aib-2026",
+            "start_date": "2026-01-05T00:00:00Z",
+            "type": "tournament",
+            "user_permission": "forecaster",
+            "visibility": "not_in_main_feed"
+          }
+        ],
+        "question_count": 0,
+        "status": "approved",
+        "title": "Announcing Spring 2026 AI Forecasting Benchmark",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 38909,
+        "projects_tournament": [
+          {
+            "bot_leaderboard_status": "include",
+            "close_date": "2025-07-24T00:00:00Z",
+            "created_at": "2025-03-22T19:06:55.820092Z",
+            "default_permission": "forecaster",
+            "description_preview": "<p><i>(New project ID for bots: 32721)</i></p>\r\n<p>Welcome to the Q2 AI Forecasting Benchmark! This is the 4th tournament in our $120,000 se",
+            "edited_at": "2026-05-01T03:39:44.173504Z",
+            "forecasting_end_date": "2025-07-09T00:00:00Z",
+            "header_image": "https://cdn.metaculus.com/aib-q2-banner.webp",
+            "html_metadata_json": null,
+            "id": 32721,
+            "is_current_content_translated": false,
+            "is_ongoing": false,
+            "name": "AI Forecasting Benchmark Tournament - 2025 Q2",
+            "order": 0,
+            "prize_pool": "30000.00",
+            "score_type": "spot_peer_tournament",
+            "show_on_homepage": false,
+            "slug": "aibq2",
+            "start_date": "2025-04-21T01:38:25Z",
+            "type": "tournament",
+            "user_permission": null,
+            "visibility": "not_in_main_feed"
+          }
+        ],
+        "question_count": 0,
+        "status": "approved",
+        "title": "Another Year of AI Benchmarking: The Plan",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43497,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "approved",
+        "title": "What are other bots doing?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 39140,
+        "projects_tournament": [
+          {
+            "bot_leaderboard_status": "include",
+            "close_date": "2025-07-24T00:00:00Z",
+            "created_at": "2025-03-22T19:06:55.820092Z",
+            "default_permission": "forecaster",
+            "description_preview": "<p><i>(New project ID for bots: 32721)</i></p>\r\n<p>Welcome to the Q2 AI Forecasting Benchmark! This is the 4th tournament in our $120,000 se",
+            "edited_at": "2026-05-01T03:39:44.173504Z",
+            "forecasting_end_date": "2025-07-09T00:00:00Z",
+            "header_image": "https://cdn.metaculus.com/aib-q2-banner.webp",
+            "html_metadata_json": null,
+            "id": 32721,
+            "is_current_content_translated": false,
+            "is_ongoing": false,
+            "name": "AI Forecasting Benchmark Tournament - 2025 Q2",
+            "order": 0,
+            "prize_pool": "30000.00",
+            "score_type": "spot_peer_tournament",
+            "show_on_homepage": false,
+            "slug": "aibq2",
+            "start_date": "2025-04-21T01:38:25Z",
+            "type": "tournament",
+            "user_permission": null,
+            "visibility": "not_in_main_feed"
+          }
+        ],
+        "question_count": 0,
+        "status": "approved",
+        "title": "Announcing the Winners of the Q2 2025 AI Forecasting Benchmark Tournament",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 39274,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "approved",
+        "title": "Warmup MiniBench Is Live!",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 36486,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "What is the top SWE-Bench Verified score on the following dates?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 38928,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "approved",
+        "title": "FutureEval Bot Tournament Resources Page",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 12339,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "approved",
+        "title": "Annual AGI Benchmarking Event",
+        "url": null
+      }
+    ]
+  },
+  "url": "https://www.metaculus.com/api/posts/?search=MiniBench&statuses=open&limit=20"
+}

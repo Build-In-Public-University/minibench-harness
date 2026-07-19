@@ -1,0 +1,35 @@
+{
+  "api_discovery": {
+    "current_tournament_id": {
+      "next_step": "discover via Metaculus API or authenticated tournament metadata before submission",
+      "status": "not_visible_in_public_page_extract"
+    },
+    "metaculus_token": {
+      "provided_in_chat": true,
+      "storage_policy": "environment_or_private_ignored_file_only_never_commit",
+      "written_to_repo": false
+    },
+    "participation_survey_requirement": {
+      "note": "User flagged survey requirement; verify on live participate/rules page before prize-eligible operation.",
+      "status": "not_confirmed_in_extracted_public_rules"
+    }
+  },
+  "artifact": "metaculus_minibench_live_rules_receipt",
+  "confirmed": {
+    "active_minibench_question_count": 59,
+    "minibench_biweekly": true,
+    "rules": [
+      "code_or_description_disclosure_required",
+      "comments_required",
+      "no_human_in_loop",
+      "one_prize_eligible_bot_per_user_or_team"
+    ],
+    "template_mentions_live_minibench": true
+  },
+  "retrieved_at_utc": "2026-07-19T00:02:13.926871+00:00",
+  "sources": {
+    "bot_template": "https://github.com/Metaculus/metac-bot-template",
+    "contest_rules": "https://www.metaculus.com/aib/contest-rules/",
+    "minibench": "https://www.metaculus.com/aib/minibench/"
+  }
+}

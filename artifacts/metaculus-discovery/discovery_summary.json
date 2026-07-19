@@ -1,0 +1,27 @@
+{
+  "artifact": "metaculus_read_only_discovery_summary",
+  "created_at_utc": "2026-07-19T12:38:55.114309+00:00",
+  "discovery_requests_recorded": 44,
+  "notes": [
+    "Public /aib/minibench/ page exposes /tournament/minibench/ and recent cycle slugs.",
+    "Direct /tournament/minibench/ urllib fetch hit Cloudflare challenge during discovery.",
+    "No forecast submission endpoint was called."
+  ],
+  "resolved": {
+    "aib_minibench_page_sha256": "9a98d4361c1444459bbc7b02bbb9e78196cad0cb7776134d22608eae5f29b79b",
+    "aib_minibench_page_status": 200,
+    "api_auth_works": true,
+    "bot_testing_area_open_posts": 7,
+    "bot_testing_area_slug": "bot-testing-area",
+    "current_minibench_public_url": "https://www.metaculus.com/tournament/minibench/"
+  },
+  "status": "partial_complete_no_submission",
+  "submissions_made": false,
+  "token_used": "yes_not_stored_not_printed_in_artifacts",
+  "unresolved": {
+    "api_filter_for_current_minibench_posts": "not_resolved_tournaments_minibench_returned_zero_project_param_was_broad",
+    "current_cycle_enterability": "not_confirmed_by_api",
+    "current_minibench_numeric_project_id": "not_resolved_from_api_yet",
+    "participation_survey_state": "not_confirmed_by_api"
+  }
+}

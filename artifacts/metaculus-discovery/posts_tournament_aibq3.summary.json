@@ -1,0 +1,13 @@
+{
+  "body_sha256": "9e505b54c357a4319c75bb9414cb6159f02365034ceb91a35fd0852c729a9b79",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:36:11.475712+00:00",
+  "name": "posts_tournament_aibq3",
+  "status": 200,
+  "summary": {
+    "count": null,
+    "result_count": 0,
+    "samples": []
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=aibq3&statuses=open&limit=100"
+}

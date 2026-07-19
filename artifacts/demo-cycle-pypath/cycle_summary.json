@@ -1,0 +1,9 @@
+{
+  "beat_ducks": {
+    "base_rate": 2,
+    "persistence": 2
+  },
+  "forecast_count": 2,
+  "mean_brier": 0.125,
+  "settled_count": 2
+}

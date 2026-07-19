@@ -1,0 +1,50 @@
+{
+  "body_sha256": "dd2f8281cf96790ef85ed7f937da1bb4ca4008e8ef955f558cd5588fd334356b",
+  "fetched_at_utc": "2026-07-19T13:10:50.319727+00:00",
+  "name": "cycle_slug_projects_minibench-2026-06-15",
+  "status": 200,
+  "summary": {
+    "result_count": 20,
+    "sample_project_slugs": [
+      "respiratory-outlook-25-26"
+    ],
+    "sample_titles": [
+      {
+        "id": 44707,
+        "slug": "respiratory-outlook-july-update",
+        "status": "approved",
+        "title": "Respiratory Outlook July Update: Screwworm continues US spread as Ebola outbreak surges in DRC",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 44694,
+        "slug": "what-percent-of-americans-will-oppose-the-iran-war-on-august-14-2026",
+        "status": "open",
+        "title": "What percent of Americans will oppose the Iran War on August 14, 2026?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 44693,
+        "slug": "will-linux-global-desktop-market-share-exceed-8-in-august-2026",
+        "status": "open",
+        "title": "Will the desktop market share of Linux exceed 8% in August 2026?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 44683,
+        "slug": "michigan-2026-cyclosporiasis-hospitalizations-remain-under-300-through-august",
+        "status": "open",
+        "title": "Will the total number of hospitalizations from cyclosporiasis in Michigan remain under 300 through the end of August 2026?",
+        "user_permission": "forecaster"
+      },
+      {
+        "id": 44682,
+        "slug": "democrats-lead-in-the-congressional-generic-ballot-on-august-15-2026",
+        "status": "open",
+        "title": "What will Democrats' lead be in the congressional generic ballot on August 15, 2026?",
+        "user_permission": "forecaster"
+      }
+    ]
+  },
+  "url": "https://www.metaculus.com/api/posts/?projects=minibench-2026-06-15&statuses=open&limit=20"
+}

@@ -1,0 +1,78 @@
+{
+  "body_sha256": "9f65d5f63ebb9e70dcaf4c0f6fd0f99627b5f81d64f0d020defb361823d63999",
+  "content_type": "application/json",
+  "fetched_at_utc": "2026-07-19T12:35:35.219494+00:00",
+  "name": "posts_bot_testing_area",
+  "status": 200,
+  "summary": {
+    "count": null,
+    "next_present": true,
+    "result_count": 7,
+    "sample_posts": [
+      {
+        "default_project": null,
+        "id": 43327,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "Will any of Belgium, France, Italy, Luxembourg, Netherlands, and/or Germany leave the EU before 2027?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43326,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "Which party will hold the most seats in the US House of Representatives after the 2026 elections?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43325,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "Will the sitting U.S. president\u2019s net worth reach \u22654x its value before they became president at any point in the following years?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43324,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "When will martial law be lifted in at least 3/4 of Ukraine?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43323,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "What will be Donald Trump's net approval on December 31, 2026?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43322,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "What will the average interest rate on the US federal government's total debt be at the end of these fiscal years?",
+        "url": null
+      },
+      {
+        "default_project": null,
+        "id": 43321,
+        "projects_tournament": null,
+        "question_count": 0,
+        "status": "open",
+        "title": "How many of these 15 top US executive branch officials will be out before 2027?",
+        "url": null
+      }
+    ]
+  },
+  "url": "https://www.metaculus.com/api/posts/?tournaments=bot-testing-area&statuses=open&limit=20"
+}
