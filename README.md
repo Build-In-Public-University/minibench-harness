@@ -345,7 +345,28 @@ POST smoke result:
 target: bot-testing-area
 post_id: 43327
 question_id: 43332
+question_type: binary
 probability_yes: 0.50
+forecast endpoint status: 201
+comment endpoint status: 201
+readback status: 200
+```
+
+Multiple-choice POST smoke receipt:
+
+```text
+artifacts/metaculus-discovery/bot_testing_area_multiple_choice_post_smoke_receipt.json
+```
+
+Multiple-choice POST smoke result:
+
+```text
+target: bot-testing-area
+post_id: 43326
+question_id: 43331
+question_type: multiple_choice
+options: Democrats, Republicans, Other
+probability_yes_per_category: Democrats 0.48, Republicans 0.49, Other 0.03
 forecast endpoint status: 201
 comment endpoint status: 201
 readback status: 200

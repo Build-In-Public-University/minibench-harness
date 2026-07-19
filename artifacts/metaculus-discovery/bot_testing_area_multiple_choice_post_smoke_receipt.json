@@ -1,0 +1,101 @@
+{
+  "artifact": "metaculus_bot_testing_area_multiple_choice_post_smoke_receipt",
+  "comment_text_sha256": "6b849aee9af88c44183614f1f1f95c296449197a45f7a90b98f119befa93b8ce",
+  "created_at_utc": "2026-07-19T21:38:38.653811+00:00",
+  "not_minibench": true,
+  "probability_yes_per_category": {
+    "Democrats": 0.48,
+    "Other": 0.03,
+    "Republicans": 0.49
+  },
+  "raw_call_receipts": [
+    {
+      "body_sha256": "a21e91b1422ecaaa0ab62c2c9fcbcabc95bfe178f26922ec1e667ae5bdfecca4",
+      "method": "GET",
+      "ok": true,
+      "path": "/posts/",
+      "status": 200
+    },
+    {
+      "body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "method": "POST",
+      "ok": true,
+      "path": "/questions/forecast/",
+      "status": 201
+    },
+    {
+      "body_sha256": "12319e046ec02566eab4192374c06fd119d76080c9ed42408397c1ea879c4bc1",
+      "method": "POST",
+      "ok": true,
+      "path": "/comments/create/",
+      "status": 201
+    },
+    {
+      "body_sha256": "1ea5798052441847a1f873da04d3ba13467407cd347b51e2c975fee5d3cb162b",
+      "method": "GET",
+      "ok": true,
+      "path": "/posts/43326/",
+      "status": 200
+    }
+  ],
+  "readback": {
+    "body_sha256": "1ea5798052441847a1f873da04d3ba13467407cd347b51e2c975fee5d3cb162b",
+    "post_id": 43326,
+    "status": "open",
+    "title": "Which party will hold the most seats in the US House of Representatives after the 2026 elections?",
+    "url": null
+  },
+  "scope": "one multiple-choice bot-testing-area forecast/comment smoke",
+  "selected_question": {
+    "description_redacted": "redacted from public smoke receipt; hash retained",
+    "description_sha256": "1d5f132e8598e66ca2fba85e7b817f62cedb4510ffc151422eca51b482c81247",
+    "options": [
+      "Democrats",
+      "Republicans",
+      "Other"
+    ],
+    "post_id": 43326,
+    "question_id": 43331,
+    "resolution_criteria_redacted": "redacted from public smoke receipt; hash retained",
+    "resolution_criteria_sha256": "259f798a0ec8a6bfb73d22017702b79141451a928070bde171bd6c9f86cc9fdb",
+    "scheduled_close_time": "2026-11-02T00:00:00Z",
+    "status": "open",
+    "title": "Which party will hold the most seats in the US House of Representatives after the 2026 elections?",
+    "type": "multiple_choice",
+    "url": null
+  },
+  "submission_receipt": {
+    "artifact": "metaculus_submission_transport_receipt",
+    "comment_endpoint": "/comments/create/",
+    "comment_response_sha256": "12319e046ec02566eab4192374c06fd119d76080c9ed42408397c1ea879c4bc1",
+    "forecast_endpoint": "/questions/forecast/",
+    "forecast_response_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "payload": {
+      "comment": {
+        "included_forecast": true,
+        "is_private": true,
+        "on_post": 43326,
+        "parent": null,
+        "text": "Bot-testing-area multiple-choice smoke test for Build-In-Public-University/minibench-harness. Distribution is a deliberately bland transport check, not a MiniBench/live tournament run."
+      },
+      "forecast": [
+        {
+          "continuous_cdf": null,
+          "probability_yes": null,
+          "probability_yes_per_category": {
+            "Democrats": 0.48,
+            "Other": 0.03,
+            "Republicans": 0.49
+          },
+          "question": 43331,
+          "source": "api"
+        }
+      ]
+    },
+    "payload_sha256": "be3ae967adfab13f165604480087e6c252dde5152a99ec8046a65ca4dd6911ea",
+    "status": "submitted",
+    "submission_endpoints_called": true
+  },
+  "target": "bot-testing-area",
+  "token_written_to_artifact": false
+}

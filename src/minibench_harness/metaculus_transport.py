@@ -34,23 +34,57 @@ def build_posts_query_params(tournament_id: int | str, *, offset: int = 0, count
         'statuses': 'open',
         'include_description': 'true',
     }
-
-
-def build_forecast_payload(question_id: int, probability: float, question_type: str = 'binary') -> list[dict[str, Any]]:
-    if question_type != 'binary':
-        raise NotImplementedError('only binary dry-run payloads are supported in the harness adapter so far')
-    probability = float(probability)
+def _validate_probability(value: float) -> float:
+    probability = float(value)
     if not 0 < probability < 1:
         raise ValueError('probability must be strictly between 0 and 1')
-    return [
-        {
-            'question': int(question_id),
-            'source': 'api',
-            'probability_yes': probability,
-            'probability_yes_per_category': None,
-            'continuous_cdf': None,
-        }
-    ]
+    return probability
+
+
+def _validate_multiple_choice(probability: Any, options: list[str] | None) -> dict[str, float]:
+    if not options:
+        raise ValueError('multiple_choice options are required')
+    if not isinstance(probability, dict):
+        raise ValueError('multiple_choice probability must be a dict keyed by option')
+    if set(probability) != set(options):
+        raise ValueError('multiple_choice probability keys must match options exactly')
+    normalized = {option: float(probability[option]) for option in options}
+    if any(value <= 0 or value >= 1 for value in normalized.values()):
+        raise ValueError('multiple_choice probabilities must be strictly between 0 and 1')
+    if abs(sum(normalized.values()) - 1.0) > 1e-9:
+        raise ValueError('multiple_choice probabilities must sum to 1')
+    return normalized
+
+
+def build_forecast_payload(
+    question_id: int,
+    probability: float | dict[str, float],
+    question_type: str = 'binary',
+    *,
+    options: list[str] | None = None,
+) -> list[dict[str, Any]]:
+    if question_type == 'binary':
+        probability_yes = _validate_probability(float(probability))
+        return [
+            {
+                'question': int(question_id),
+                'source': 'api',
+                'probability_yes': probability_yes,
+                'probability_yes_per_category': None,
+                'continuous_cdf': None,
+            }
+        ]
+    if question_type == 'multiple_choice':
+        return [
+            {
+                'question': int(question_id),
+                'source': 'api',
+                'probability_yes': None,
+                'probability_yes_per_category': _validate_multiple_choice(probability, options),
+                'continuous_cdf': None,
+            }
+        ]
+    raise NotImplementedError(f'{question_type} payloads are not supported in the harness adapter so far')
 
 
 def build_comment_payload(post_id: int, comment_text: str) -> dict[str, Any]:
@@ -77,6 +111,7 @@ def normalize_post_question(post: dict[str, Any]) -> dict[str, Any] | None:
         'url': post.get('url') or post.get('page_url'),
         'resolution_criteria': question.get('resolution_criteria'),
         'description': question.get('description') or question.get('background_info'),
+        'options': question.get('options'),
     }
 
 
@@ -125,13 +160,14 @@ class MetaculusTransport:
         *,
         post_id: int,
         question_id: int,
-        probability: float,
+        probability: float | dict[str, float],
         rationale: str,
         dry_run: bool = True,
         question_type: str = 'binary',
+        options: list[str] | None = None,
     ) -> dict[str, Any]:
         payload = {
-            'forecast': build_forecast_payload(question_id, probability, question_type),
+            'forecast': build_forecast_payload(question_id, probability, question_type, options=options),
             'comment': build_comment_payload(post_id, rationale),
         }
         receipt = {
