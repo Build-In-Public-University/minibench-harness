@@ -227,7 +227,7 @@ def test_continuous_cdf_payload_rejects_wrong_length_non_monotone_boundary_or_no
 @pytest.mark.parametrize(
     'question_type, cdf, open_lower_bound, open_upper_bound',
     [
-        ('numeric', [0.05, 0.5, 0.95], True, True),
+        ('numeric', [0.001, 0.5, 0.95], True, True),
         ('date', [0.0, 0.5, 0.95], False, True),
         ('discrete', [0.0, 0.5, 1.0], False, False),
     ],
@@ -253,6 +253,8 @@ def test_continuous_cdf_payload_respects_open_and_closed_bounds(
         ([0.0, 0.5, 0.95], True, True),
         ([0.0, 0.5, 0.95], False, False),
         ([0.0, 0.5, 1.0], False, True),
+        ([0.0009, 0.5, 0.95], True, True),
+        ([0.001, 0.00104, 0.95], True, True),
     ],
 )
 def test_continuous_cdf_payload_rejects_bound_values_that_conflict_with_question_bounds(

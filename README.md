@@ -463,3 +463,40 @@ multiple_choice: post_id 44676 / question_id 44835 / Who will be the 2026 Republ
 numeric:         post_id 44551 / question_id 44705 / What percentage of the vote will Nigel Farage receive in the Clacton parliamentary by-election in August 2026?
 ```
 
+## Metaculus Cup practice POST receipt
+
+Pre-POST artifact:
+
+```text
+artifacts/metaculus-discovery/metaculus_cup_practice_pre_post_forecast_packet.json
+```
+
+POST receipt artifact:
+
+```text
+artifacts/metaculus-discovery/metaculus_cup_practice_post_receipt.json
+```
+
+Submitted forecasts:
+
+```text
+binary Bosnia HR: 67% Yes
+SC GOP nominee: Evette 10%, Fry 14%, Nordone 6%, McMaster 8%, Norman 28%, Lynch 17%, Other 17%
+Farage Clacton vote share: normal-CDF grid, mean 69%, sd 7%, repaired to Metaculus min-step/open-bound constraints
+```
+
+POST result:
+
+```text
+binary:          accepted in first attempt; final readback has my_forecasts.latest=true
+multiple_choice: accepted in first attempt; final readback has my_forecasts.latest=true
+numeric:         first attempt 400 on CDF constraints; repaired and accepted with forecast 201 / comment 201 / readback 200
+```
+
+Live CDF rule discovered on real Cup numeric question:
+
+```text
+open lower bound requires cdf[0] >= 0.001
+adjacent cdf values must increase by at least 5e-05
+```
+

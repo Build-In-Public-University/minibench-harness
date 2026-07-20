@@ -76,9 +76,13 @@ def _validate_continuous_cdf(
         raise ValueError('continuous_cdf values must be between 0 and 1')
     if any(left > right for left, right in zip(cdf, cdf[1:])):
         raise ValueError('continuous_cdf values must be monotone nondecreasing')
+    if any((right - left) < 5e-05 for left, right in zip(cdf, cdf[1:])):
+        raise ValueError('continuous_cdf values must increase by at least 5e-05 at every step')
     if open_lower_bound is False and cdf[0] != 0.0:
         raise ValueError('continuous_cdf[0] must be 0.0 for closed lower bound')
-    if open_lower_bound is not False and cdf[0] <= 0.0:
+    if open_lower_bound is True and cdf[0] < 0.001:
+        raise ValueError('continuous_cdf[0] must be at least 0.001 for open lower bound')
+    if open_lower_bound is None and cdf[0] <= 0.0:
         raise ValueError('continuous_cdf[0] must be greater than 0.0 unless lower bound is known closed')
     if open_upper_bound is False and cdf[-1] != 1.0:
         raise ValueError('continuous_cdf[-1] must be 1.0 for closed upper bound')
