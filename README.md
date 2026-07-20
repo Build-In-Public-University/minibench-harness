@@ -429,10 +429,37 @@ submission_endpoints_called: false
 ```
 
 Meaning:
-
 ```text
 The current MiniBench series is visible and hashed, but its forecasting window is closed.
 This is not a live submission freeze; it is a no-open-window boundary receipt.
 A future MiniBench live run requires a fresh freeze during an open window and separate approval before POST.
+```
+
+## Metaculus Cup practice freeze — no submission
+
+Freeze artifact:
+
+```text
+artifacts/metaculus-discovery/metaculus_cup_practice_freeze_packet.json
+```
+
+Freeze result:
+
+```text
+target: metaculus-cup-summer-2026
+read_only_question_count: 27
+available_type_counts: binary 17, multiple_choice 3, numeric 5, discrete 2
+selected_question_count: 3
+submission_endpoints_called: false
+forecast_endpoint_called: false
+comment_endpoint_called: false
+```
+
+Selected practice packet:
+
+```text
+binary:          post_id 43491 / question_id 43498 / Will a new High Representative for Bosnia and Herzegovina officially be in place before September 2, 2026?
+multiple_choice: post_id 44676 / question_id 44835 / Who will be the 2026 Republican nominee for U.S. Senator from South Carolina?
+numeric:         post_id 44551 / question_id 44705 / What percentage of the vote will Nigel Farage receive in the Clacton parliamentary by-election in August 2026?
 ```
 
